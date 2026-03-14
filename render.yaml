@@ -1,5 +1,7 @@
 services:
-  - type: static
+  - type: web
     name: joy-landing-page
-    plan: free
+    runtime: static
+    repo: https://github.com/the-joy-boo/joy-landing-page
+    branch: main
     staticPublishPath: .
