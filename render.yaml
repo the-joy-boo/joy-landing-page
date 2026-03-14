@@ -1,0 +1,5 @@
+services:
+  - type: static
+    name: joy-landing-page
+    plan: free
+    staticPublishPath: .

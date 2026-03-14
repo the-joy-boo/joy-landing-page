@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joy — Plan Your Perfect Wedding</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #fdf8f4;
+      color: #2c2c2c;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 4rem;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #c1666b;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #555;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: #c1666b; }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+      background: linear-gradient(135deg, #fff5f5 0%, #fdf8f4 60%, #fff0ea 100%);
+    }
+
+    .hero-badge {
+      background: #fce4e4;
+      color: #c1666b;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      color: #1a1a1a;
+      line-height: 1.15;
+      max-width: 720px;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 span { color: #c1666b; }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: #666;
+      max-width: 520px;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .cta-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: #c1666b;
+      color: #fff;
+      padding: 0.85rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn-primary:hover { background: #a84f54; transform: translateY(-1px); }
+
+    .btn-secondary {
+      background: #fff;
+      color: #c1666b;
+      border: 1.5px solid #c1666b;
+      padding: 0.85rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn-secondary:hover { background: #fff5f5; transform: translateY(-1px); }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      padding: 5rem 4rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .feature-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .feature-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a; }
+    .feature-card p { font-size: 0.92rem; color: #777; line-height: 1.6; }
+
+    .stats {
+      background: #c1666b;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      flex-wrap: wrap;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .stat h2 { font-size: 2.5rem; font-weight: bold; }
+    .stat p { font-size: 0.9rem; opacity: 0.85; margin-top: 0.3rem; }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #999;
+      font-size: 0.85rem;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">💍 Joy</div>
+    <div class="nav-links">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Blog</a>
+      <a href="#">Sign In</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-badge">✨ The #1 Wedding Planning App</div>
+    <h1>Plan your <span>perfect wedding</span>,<br>stress-free.</h1>
+    <p class="subtitle">
+      From guest lists to seating charts, Joy keeps every detail organized
+      so you can focus on what matters — celebrating love.
+    </p>
+    <div class="cta-group">
+      <a href="#" class="btn-primary">Get Started Free</a>
+      <a href="#" class="btn-secondary">See How It Works</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <div class="feature-icon">📋</div>
+      <h3>Smart Guest Management</h3>
+      <p>Track RSVPs, dietary needs, and +1s all in one place. Import from any source in seconds.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🗺️</div>
+      <h3>Drag-and-Drop Seating</h3>
+      <p>Visualize your venue, assign seats, and handle last-minute changes without breaking a sweat.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💌</div>
+      <h3>Beautiful Invitations</h3>
+      <p>Design and send digital invites your guests will actually want to open. No postage required.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📸</div>
+      <h3>Shared Photo Albums</h3>
+      <p>Collect memories from every guest in one place. Relive your day forever.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📆</div>
+      <h3>Timeline & Checklist</h3>
+      <p>Never miss a deadline. Joy's built-in timeline keeps you on track from engagement to honeymoon.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💰</div>
+      <h3>Budget Tracker</h3>
+      <p>Set a budget, track every expense, and avoid surprises. Because the day should be magical, not stressful.</p>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><h2>2M+</h2><p>Couples Served</p></div>
+    <div class="stat"><h2>50M+</h2><p>Guests Reached</p></div>
+    <div class="stat"><h2>4.9★</h2><p>App Store Rating</p></div>
+    <div class="stat"><h2>180+</h2><p>Countries</p></div>
+  </section>
+
+  <footer>
+    © 2025 Joy. Made with ❤️ for couples everywhere.
+  </footer>
+
+</body>
+</html>
